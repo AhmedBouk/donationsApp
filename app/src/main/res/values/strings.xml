@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DemoCours</string>
+    <string name="coucou">Hello les 4MI</string>
+    <string name="clickme">Click me</string>
+    <string name="addQuote">Save the quote</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>

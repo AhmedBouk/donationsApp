@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/mainQuoteInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New quote to add"
+            android:nextFocusDown="@+id/mainAddQuote"/>
+
+        <Button
+            android:id="@+id/mainAddQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addQuote"
+            android:onClick="addQuote"/>
+
+        <ListView
+            android:id="@+id/mainQuoteList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:backgroundTint="@color/black"/>
+    </LinearLayout>
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E91E63"
+        android:text="@string/coucou"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/TVMain"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.713"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33"
+        android:text="@string/clickme"
+        android:id="@+id/ClickMe"
+        android:onClick="clickMe"/-->
+</androidx.constraintlayout.widget.ConstraintLayout>
